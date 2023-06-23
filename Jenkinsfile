@@ -3,7 +3,7 @@ pipeline {
     dockerimagename = "antonalgeorge/react-app"
     dockerImage = ""
   }
-  agent kubeagent
+  agent { label 'kubeagent' }
   stages {
     stage('Checkout Source') {
       steps {
