@@ -5,11 +5,11 @@ pipeline {
   }
   agent { label 'kubeagent' }
   stages {
-    stage('Checkout Source') {
-      steps {
-        git 'https://github.com/anton-algeorge/jenkins-kubernetes-deployment.git'
-      }
-    }
+    // stage('Checkout Source') {
+    //   steps {
+    //     git 'https://github.com/anton-algeorge/jenkins-kubernetes-deployment.git'
+    //   }
+    // }
     stage('Build image') {
       steps{
         script {
